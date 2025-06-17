@@ -1,0 +1,11 @@
+nav{
+    background-color: bisque;
+    padding-top: 35px;
+    padding-bottom: 40px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    position: relative;
+}
