@@ -1,5 +1,5 @@
 nav{
-    background-color: bisque;
+    background-color: rgb(0, 0, 0);
     padding-top: 35px;
     padding-bottom: 40px;
     padding-left: 10px;
@@ -8,4 +8,84 @@ nav{
     align-items: center;
     font-size: 25px;
     position: relative;
+    color: aliceblue;
+    font-weight: 500;
+    z-index: 1000;
+    box-shadow: 0 4px 7px rgba(0,0,0,0.2);
+    position: sticky;
 }
+
+.logo img{
+    width: 50px;
+    height: 50px;
+    padding-top: 5px;
+    align-items:center;
+    gap: 10px;
+   
+}
+
+.nav-links {
+    display: flex;
+    gap: 45px;
+}
+
+.nav-links a{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    transition: color 0.3s ease;
+    padding: 8px 14px;
+}
+
+.nav-links a:hover{
+    color: blue;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.23);
+    
+}
+
+
+nav.scrolled{
+    background-color: rgb(20, 20, 20);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.body{
+    font-family: Arial, sans-serif;
+    
+}
+
+.sidebar{
+    padding-top: 70px;
+    position: fixed;
+    background-color: black;
+    width: 230px;
+    height: 900vh;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex-direction: column;
+    transition: left 0.3s ease;
+    z-index: 999;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.5);
+}
+
+.sidebar a{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    transition: all 0.3s ease;
+    padding:15px 20px;
+    padding-left: 30px;
+    border-radius: 5px;
+}
+
+.sidebar a:hover{
+    background-color: rgb(186, 178, 178);
+    box-shadow: inset 3px 3px 6px rgba(0,0,0,0.2);
+}
+
+a.active {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: rgb(182, 182, 174);
+  font-weight: bold;
+  border-radius: 5px;
+}
+
