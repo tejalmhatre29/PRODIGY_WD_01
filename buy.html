@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>SmartWatch MAXUS- Official Landing Page</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        
         <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="buy.css">
         
 </head>
 <body>
@@ -17,7 +19,7 @@
         <div class="nav-links" id="navLinks">
             <a href="home.html"><i class="fa-solid fa-house"></i></i>Home</a>
             <a href="#"><i class="fas fa-info-circle"></i>About</a>
-            <a href="buy.html"><i class="fa-solid fa-store"></i>Buy</a>
+            <a href="buy.html" class="active"><i class="fa-solid fa-store"></i>Buy</a>
             <a href="#"><i class="fas fa-user"></i>MyProfile</a>
         </div>
         <div class="hamburger" id="hamburger">
@@ -30,26 +32,40 @@
     <div class="sidebar" id="sidebar">
         <a href="#" ><i class="fa-solid fa-house"></i> Home</a>
         <a href="#"><i class="fas fa-info-circle"></i> About</a>
-        <a href="#"><i class="fa-solid fa-store"></i> Buy</a>
+        <a href="#" class="active"><i class="fa-solid fa-store"></i> Buy</a>
         <a href="#"><i class="fas fa-user"></i> Profile</a>
     </div>
-    
-        <section class="hero">
-          <div class="hero-description">
-            <h1>SmartWatch MAXUS</h1>
-            <p>The perfect blend of style, performance, and health tracking — all on your wrist.</p>
-            <a href="buy.html"><i class="fa-solid fa-bag-shopping"></i>Buy Now</a>
-          </div>
-          <div class="hero-image">
-            <img src="https://kospet.com/cdn/shop/files/homepage-tank-m3-ultra-smartwatch-card-min.webp?v=1743420356&width=1200" >
-          </div>
-        </section>
 
     <section id="buy" class="buy-section">
-      <h2>Order your SmartWatch Now</h2>
-      <p>Exclusive Monsoon Offer:Buy 1 get 50% off on other!</p>
-      <a href="#" class="fa-solid fa-bag-shopping">Order Now</a>
-    </section>
+      <h2>Hurry Up</h2>
+      <p>Get trendy and cool watches at MAXUS</p>
+     
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="https://img.freepik.com/premium-photo/smart-watch-with-icons-screen_1249034-2691.jpg?ga=GA1.1.1155039096.1739456899&semt=ais_items_boosted&w=740">
+          <h2>MAXUS PRO Q</h2>
+          <p><i class="fa-solid fa-tag"></i>MRP:Rs.5999</p>
+          <button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i>  Add Item</button>
+        </div>
+
+        <div class="product-card">
+          <img src="">
+          <h2>MAXUS PRO M7</h2>
+          <p><i class="fa-solid fa-tag"></i>MRP:Rs.4999</p>
+          <button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i>  Add Item</button>
+        </div>
+
+        <div class="product-card">
+          <img src="">
+          <h2>MAXUS PRO M8</h2>
+          <p><i class="fa-solid fa-tag"></i>MRP:Rs.4499</p>
+          <button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i>  Add Item</button>
+        </div>
+      </div>
+
+    </section> 
+
+    
 
      <script>
     // Scroll effect
@@ -68,6 +84,14 @@
     hamburger.addEventListener("click", () => {
       sidebar.classList.toggle("show");
     });
+
+  document.querySelectorAll(".add-to-cart").forEach(button => {
+    button.addEventListener("click", () => {
+      alert("Product added to cart!");
+    });
+  });
+
+
   </script>
     
     

@@ -39,6 +39,8 @@ nav.scrolled{
   align-items: center;
   gap: 10px;
   letter-spacing: 1px;
+  width: 60px;
+  height: 70px;
 }
 
 .nav-links {
@@ -97,7 +99,7 @@ nav.scrolled{
 
 a.active {
   
-  color: rgb(182, 182, 174);
+  color: rgb(69, 255, 255);
   font-weight: bold;
   border-radius: 5px;
 }
@@ -120,6 +122,8 @@ a.active {
 .hero-description{
   max-width: 500px;
   animation: fadeInLeft 1s ease-out;
+  margin-left: 120px;
+  margin-bottom: 15px;
 }
 
 .hero-description h1{
@@ -155,12 +159,13 @@ a.active {
 }
 
 .hero-image img {
-  width: 300px;
-  height: 300px;
+  width: 480px;
+  height: 380px;
   object-fit: cover;
   border-radius: 20px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.4);
   animation: fadeInRight 1.2s ease-out;
+  margin-left: 0;
 }
 
 .buy-section {
