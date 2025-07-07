@@ -204,6 +204,57 @@ a.active {
 }
 
 
+.footer {
+  background-color: #0a0a23;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.footer-links a,
+.footer-socials a {
+  margin: 0 10px;
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.95em;
+}
+
+.footer-links a:hover,
+.footer-socials a:hover {
+  color: white;
+}
+
+.footer-socials {
+  margin-top: 10px;
+}
+
+.footer-socials i {
+  font-size: 1.2em;
+}
+
+.footer-copy {
+  margin-top: 20px;
+  font-size: 0.85em;
+  color: #999;
+}
+
+
 @keyframes fadeInLeft {
   from {
     opacity: 0;
